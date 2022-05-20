@@ -79,6 +79,8 @@ if (typeof settings.dbSettings === 'string') { // TODO: Remove IF this is fixed:
     }
 }
 
+settings.port = process.env.PORT || 9001;
+
 logger.info('Effective configuration is:\n', JSON.stringify(settings, null, 2));
 
 logger.info('\nWrite the Etherpad API key to the disk from the ENV "ETHERPAD_API_KEY" or local.json "___apiKey"...');
