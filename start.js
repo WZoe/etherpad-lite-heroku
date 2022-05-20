@@ -115,9 +115,9 @@ Object.keys(settings).forEach(function (key) {
     }
 });
 
-logger.info('Installing plugins...', pluginInstallCommand);
-childProcess.execSync(pluginInstallCommand, {stdio: [0, 1, 2]});
-childProcess.execSync('./installPackages.sh', {stdio: [0, 1, 2]});
+// logger.info('Installing plugins...', pluginInstallCommand);
+// childProcess.execSync(pluginInstallCommand, {stdio: [0, 1, 2]});
+// childProcess.execSync('./installPackages.sh', {stdio: [0, 1, 2]});
 
 const pathSettings = path.resolve('./etherpad-lite/settings.json');
 logger.info('\nWrite settings.json file which is read by EP to ' + pathSettings);
